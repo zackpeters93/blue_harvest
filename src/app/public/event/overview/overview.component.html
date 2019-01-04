@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header">
+    <h5>Event Title</h5>
+  </div>
+  <div class="card-body">
+    <ngb-tabset>
+      <ngb-tab title="Details">
+        <ng-template ngbTabContent>
+          <br>
+          <p>Explanation of Event Title</p>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Causes">
+        <ng-template ngbTabContent>
+          <br>
+          <p>List of Possible Causes</p>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Resources">
+        <ng-template ngbTabContent>
+          <br>
+          <app-event-resources></app-event-resources>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Risks">
+        <ng-template ngbTabContent>
+          <br>
+          <p>List of Possible Risks</p>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

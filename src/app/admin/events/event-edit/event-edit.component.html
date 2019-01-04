@@ -1,0 +1,95 @@
+<div class="card">
+  <div class="card-header text-white bg-primary">
+    Manage Event
+  </div>
+  <div class="card-body">
+    <form class="" action="#" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Event Name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Event Type</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">Red Alarm</option>
+              <option value="2">Yellow Warning</option>
+              <option value="3">Blue Notice</option>
+              <option value="3">Observed Action</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Event Description</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <br>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Possible Causes</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <br>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Risks</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Applies To</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01" multiple>
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Resources</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01" multiple>
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- <ui-switch checked></ui-switch>&nbsp;Active -->
+      <br>
+      <br>
+      <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>&nbsp;or&nbsp;
+      <button type="submit" class="btn btn-outline-success btn-sm">Save this Event</button>
+    </form>
+    <hr>
+    <app-event-steps></app-event-steps>
+  </div>
+</div>

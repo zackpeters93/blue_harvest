@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-header text-white bg-secondary">
+    <h5>There are XX steps total.</h5><span style="float:right"></span>
+  </div>
+  <div class="card-body">
+    <ngb-tabset>
+      <ngb-tab title="Step">
+        <ng-template ngbTabContent>
+          <br>
+          <app-step></app-step>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Flowchart">
+        <ng-template ngbTabContent>
+          <br>
+          <app-flowchart></app-flowchart>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

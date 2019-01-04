@@ -1,0 +1,104 @@
+<div class="card">
+  <div class="card-header text-white bg-dark">
+    Manage Step
+  </div>
+  <div class="card-body">
+    <form class="" action="#" method="post">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Position</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>#...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <!-- <label for="stepYes">Step Yes</label> -->
+            <input type="text" class="form-control" id="" placeholder="Step Yes" name="stepYes" value="">
+            <p class="help-block"><i><small>Where a YES answer takes the user</small></i></p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <!-- <label for="stepNo">Step No</label> -->
+            <input type="text" class="form-control" id="" placeholder="Step No" name="stepNo" value="">
+            <p class="help-block"><i><small>Where a NO answer takes the user</small></i></p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <input type="checkbox" checked data-toggle="toggle">
+        </div>
+        <div class="col-md-2">
+          <!-- <ui-switch checked></ui-switch>&nbsp;Active -->
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Step Task</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header bg-light">
+              Step Images
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-success" type="button" id="inputGroupFileAddon03">
+                        <fa name="upload"></fa>
+                      </button>
+                    </div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+                      <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- <img src="assets/img/1850.jpg" class="img-fluid img-thumbnail" alt=""> -->
+                    <!-- // app.component.html -->
+                    <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Step Alerts</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>&nbsp;or&nbsp;
+      <button type="submit" class="btn btn-outline-success btn-sm">Save This Step</button>
+    </form>
+  </div>
+</div>

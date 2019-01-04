@@ -1,0 +1,76 @@
+<div class="row">
+  <div class="col-md-8">
+    <div class="card">
+      <h5 class="card-header">Select A Machine</h5>
+      <form class="form-inline" action="#" method="post">
+        <div class="form-group">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <!-- <label for="unitSelection">Business Unit</label> -->
+                  <select class="form-control" id="unitSelection">
+                    <option>Business Unit</option>
+                    <option>Komatsu Mining - KMC</option>
+                    <option>Komatsu America - KAC</option>
+                    <option>Komatsu Limited - KLTD</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <h5 class="card-header">Resume A Previous Incident</h5>
+      <div class="card-body">
+        <form class="form-inline">
+          <label class="sr-only" for="incident">Incident #</label>
+          <input type="text" class="form-control mb-2 mr-sm-2" id="incident" placeholder="enter number">
+
+          <button type="submit" class="btn btn-primary mb-2">Resume</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <h5 class="card-header">My Incident History</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead class="thead-primary">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Model</th>
+              <th scope="col">Serial</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>L2350</td>
+              <td></td>
+              <td><button type="button" class="btn btn-default">Resume</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>L2350</td>
+              <td></td>
+              <td><button type="button" class="btn btn-default">Resume</button></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>L1850</td>
+              <td></td>
+              <td><button type="button" class="btn btn-default">Resume</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

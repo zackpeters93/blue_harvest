@@ -1,0 +1,160 @@
+<div class="card">
+  <div class="card-header text-white bg-primary">
+    Manage Machine
+  </div>
+  <div class="card-body">
+    <form class="" action="#" method="post">
+      <div class="card">
+        <div class="card-header text-white bg-secondary">
+          Machine Classification
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Business Unit</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>KMC</option>
+                  <option>KAC</option>
+                  <option>KLTD</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Application</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Surface</option>
+                  <option>Underground</option>
+                  <option>Construction</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Machine Class</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Loaders</option>
+                  <option>Dozer</option>
+                  <option>HEX</option>
+                  <option>Shovel</option>
+                  <option>Haul Truck</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Model</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Varies by Machine Class..</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header text-white bg-secondary">
+          Machine Details
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Serial Number</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter the machine serial number here" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header text-white bg-dark">
+                  Machine Attributes
+                </div>
+                <div class="card-body">
+                  List of Attributes by Machine Type
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <!-- <ui-switch checked></ui-switch>&nbsp;Active -->
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header text-white bg-secondary">
+              Equipment Owner
+            </div>
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Owner</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header text-white bg-secondary">
+              Support Organization
+            </div>
+            <div class="card-body">
+              <ngb-tabset>
+                <ngb-tab title="Region">
+                  <ng-template ngbTabContent>
+                    <br>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Region</label>
+                      </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Dealer">
+                  <ng-template ngbTabContent>
+                    <br>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Dealer</label>
+                      </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </ng-template>
+                </ngb-tab>
+              </ngb-tabset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>&nbsp;or&nbsp;
+      <button type="submit" class="btn btn-outline-success btn-sm">Save this Machine</button>
+    </form>
+  </div>
+</div>

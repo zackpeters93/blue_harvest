@@ -1,0 +1,95 @@
+<div class="card">
+  <div class="card-header text-white bg-primary">
+    Manage User
+  </div>
+  <div class="card-body">
+    <form class="" action="#" method="post">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <fa name="user"></fa>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Email Address" aria-label="email" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">First and Last name</span>
+            </div>
+            <input type="text" aria-label="First name" class="form-control" placeholder="First">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Last">
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Business Unit</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">KMC</option>
+              <option value="2">KAC</option>
+              <option value="3">KLTD</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Region</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">AMNO</option>
+              <option value="2">LATAM</option>
+              <option value="3">AUS</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Account</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">Customer 1</option>
+              <option value="2">Customer 2</option>
+              <option value="3">Customer 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-danger">
+              <input type="checkbox" name="options" id="option1" autocomplete="off"> Admin
+            </label>
+            <label class="btn btn-outline-success">
+              <input type="checkbox" name="options" id="option2" autocomplete="off"> Factory Rep
+            </label>
+            <label class="btn btn-outline-success active">
+              <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Active
+            </label>
+            <label class="btn btn-outline-secondary">
+              <input type="checkbox" name="options" id="option3" autocomplete="off"> Locked
+            </label>
+            <label class="btn btn-outline-secondary">
+              <input type="checkbox" name="options" id="option3" autocomplete="off"> Change PWD
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-default btn-sm">Clear</button>&nbsp;
+      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+    </form>
+  </div>
+</div>
