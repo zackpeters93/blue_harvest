@@ -1,12 +1,13 @@
 <header id="site-header">
   <!-- Image and text -->
-  <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
-    <a class="navbar-brand text-white" href="#">
+  <nav class="navbar navbar-expand-md navbar-secondary bg-secondary">
+    <a class="navbar-brand text-white" href="#" (click)="onSelect('public')">
       <img src="assets/img/Komatsu_RGB_30x100.jpg" width="100" height="30" class="d-inline-block align-top" alt="">&nbsp;KiTS
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <fa name="bars"></fa>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -20,7 +21,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-white btn btn-success btn-sm">
+          <a class="nav-link text-white btn btn-success btn-sm" (click)="onSelect('admin')">
             <fa name="cog" animation="spin"></fa>&nbsp;Admin
           </a>
         </li>

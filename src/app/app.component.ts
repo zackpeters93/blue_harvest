@@ -9,11 +9,22 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
 
 export class AppComponent implements OnInit {
     title = 'KiTS';
+
+    // Image Gallery add-on
     galleryOptions: NgxGalleryOptions[];
     galleryImages: NgxGalleryImage[];
 
+    // Page Selector
+    loadedSection = 'public';
+
+    onNavigate(section: string) {
+      this.loadedSection = section;
+    }
+
     ngOnInit(): void {
 
+
+      // Start Image Gallery Add-on
         this.galleryOptions = [
             {
                 width: '600px',
@@ -55,5 +66,7 @@ export class AppComponent implements OnInit {
                 big: 'assets/3-big.jpg'
             }
         ];
+
+        // End Image Gallery Add-on
     }
 }

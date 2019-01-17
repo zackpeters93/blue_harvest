@@ -1,75 +1,20 @@
 <div class="card">
   <div class="card-header">
-    Manage Users<span style="float:right"><button type="button" class="btn btn-primary btn-sm">
+    Manage Users<span style="float:right"><button type="button" class="btn btn-primary btn-sm" [disabled]="!allowNewUser" (click)="onCreateUser()">
         <fa name="plus"></fa>
       </button></span>
   </div>
   <div class="card-body">
-    <app-user-edit></app-user-edit>
-    <hr>
-    Sort & Filter Options
-    <table class="table table-striped table-hover table-bordered">
-      <thead>
-        <tr>
-          <th>ID#</th>
-          <th>Username</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Account</th>
-          <th>Admin</th>
-          <th>FR</th>
-          <th>Active</th>
-          <th>Locked</th>
-          <th>Chg PWD</th>
-          <th>View</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>zpeters</td>
-          <td>Zack</td>
-          <td>Peters</td>
-          <td>KMC</td>
-          <!-- <td>
-            <ui-switch checked color="red"></ui-switch>
-          </td>
-          <td>
-            <ui-switch checked color="green"></ui-switch>
-          </td>
-          <td>
-            <ui-switch checked color="green"></ui-switch>
-          </td>
-          <td>
-            <ui-switch [checked]="false"></ui-switch>
-          </td>
-          <td>
-            <ui-switch [checked]="false"></ui-switch>
-          </td> -->
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-success">
-              <fa name="eye"></fa>
-            </button>
-          </td>
-          <td>
-            <button type="button" class="btn btn-warning">
-              <fa name="edit"></fa>
-            </button>
-          </td>
-          <td>
-            <button type="button" class="btn btn-danger">
-              <fa name="trash"></fa>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div class="col-md-6">
+        <app-user-list (userWasSelected)="selectedUser = $event"></app-user-list>
+      </div>
+      <div class="col-md-6">
+        <app-user-detail *ngIf="selectedUser; else infoText" [user]="selectedUser"></app-user-detail>
+        <ng-template #infoText>
+          <p>Please select a user or create a new one!</p>
+        </ng-template>
+      </div>
+    </div>
   </div>
 </div>

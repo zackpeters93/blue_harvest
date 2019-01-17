@@ -1,15 +1,15 @@
 <div class="container-fluid">
   <!-- Header -->
-  <app-header></app-header>
+  <app-header (sectionSelected)="onNavigate($event)"></app-header>
   <div class="container-fluid">
     <!-- Admin Section -->
-    <!-- <p>Admin Hidden</p> -->
-    <app-admin></app-admin>
+    <!-- <p *ngIf="loadedSection !== 'admin'">Admin Hidden</p> -->
+    <app-admin *ngIf="loadedSection === 'admin'"></app-admin>
     <hr>
 
     <!-- Title and Active Machine -->
-    <!-- <p>Public Hidden</p> -->
-    <app-public></app-public>
+    <!-- <p *ngIf="loadedSection === 'admin'">Public Hidden</p> -->
+    <app-public *ngIf="loadedSection !== 'admin'"></app-public>
     <hr>
 
   </div>

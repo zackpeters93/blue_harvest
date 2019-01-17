@@ -12,22 +12,21 @@
                 <fa name="user"></fa>
               </span>
             </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" (input)="onUpdateUserName($event)" value="{{ user.userName }}">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">@</span>
+              <span class="input-group-text" id="basic-addon2">@</span>
             </div>
-            <input type="text" class="form-control" placeholder="Email Address" aria-label="email" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Email Address" aria-label="email" aria-describedby="basic-addon2" value="{{ user.emailAddress }}">
           </div>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">First and Last name</span>
             </div>
-            <input type="text" aria-label="First name" class="form-control" placeholder="First">
-            <input type="text" aria-label="Last name" class="form-control" placeholder="Last">
+            <input type="text" aria-label="First name" class="form-control" placeholder="First" value="{{ user.firstName }}">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Last" value="{{ user.lastName }}">
           </div>
-
         </div>
         <div class="col-md-4">
           <div class="input-group mb-3">
@@ -43,9 +42,9 @@
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect01">Region</label>
+              <label class="input-group-text" for="inputGroupSelect02">Region</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="inputGroupSelect02">
               <option selected>Choose...</option>
               <option value="1">AMNO</option>
               <option value="2">LATAM</option>
@@ -54,9 +53,9 @@
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect01">Account</label>
+              <label class="input-group-text" for="inputGroupSelect03">Account</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="inputGroupSelect03">
               <option selected>Choose...</option>
               <option value="1">Customer 1</option>
               <option value="2">Customer 2</option>
@@ -93,3 +92,38 @@
     </form>
   </div>
 </div>
+
+<!-- <div class="row">
+  <div class="col-xs-12">
+    <img [src]="user.imagePath" alt="{{ user.userName }}" class="img-responsive" style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ user.userName }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Manage User <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">To Shopping List</a></li>
+        <li><a href="#">Edit user</a></li>
+        <li><a href="#">Delete user</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{ user.emailAddress }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    Ingredients
+  </div>
+</div> -->

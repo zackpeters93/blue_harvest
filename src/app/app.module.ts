@@ -31,7 +31,9 @@ import { ResourcesComponent } from './admin/resources/resources.component';
 import { ResourceEditComponent } from './admin/resources/resource-edit/resource-edit.component';
 import { SystemSettingsComponent } from './admin/system-settings/system-settings.component';
 import { UsersComponent } from './admin/users/users.component';
-import { UserEditComponent } from './admin/users/user-edit/user-edit.component';
+import { UserDetailComponent } from './admin/users/user-detail/user-detail.component';
+import { UserListComponent } from './admin/users/user-list/user-list.component';
+import { UserItemComponent } from './admin/users/user-list/user-item/user-item.component';
 
 
 @NgModule({
@@ -60,7 +62,9 @@ import { UserEditComponent } from './admin/users/user-edit/user-edit.component';
     ResourceEditComponent,
     SystemSettingsComponent,
     UsersComponent,
-    UserEditComponent
+    UserDetailComponent,
+    UserListComponent,
+    UserItemComponent
   ],
   imports: [
     BrowserModule,
