@@ -6,10 +6,10 @@
   </div>
   <div class="card-body">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-3">
         <app-user-list (userWasSelected)="selectedUser = $event"></app-user-list>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-9">
         <app-user-detail *ngIf="selectedUser; else infoText" [user]="selectedUser"></app-user-detail>
         <ng-template #infoText>
           <p>Please select a user or create a new one!</p>
